@@ -4,7 +4,17 @@
 
 Implementation of a Geometry Wars game-like using SFML and C++  
 Based on [**COMP4300 - Game Programming - Lecture 07 - Assignment 2**](https://www.youtube.com/watch?v=-ugbLQlw_VM) by Dave Churchill  
-Uses an implementation of an Entity-Component-System (ECS) architecture
+Uses an implementation of an Entity-Component-System (ECS) architecture  
+
+### Gameplay
+
+![**In game gameplay**](normal_shoot.gif)
+
+![**In game ability use**](ability_shoot.gif)
+
+### Pause menu screenshot
+
+![**Pause menu**](screenshot.png)
 
 ## Installation
 
