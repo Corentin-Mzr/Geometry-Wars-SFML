@@ -75,8 +75,8 @@ private:
     std::string get_score_as_str() const noexcept;
     std::string get_ability_as_str() const noexcept;
 
-    Game(const Game &) = delete;
-    Game &operator=(const Game &) = delete;
+    Game(const Game &) noexcept = delete;
+    Game &operator=(const Game &) noexcept = delete;
     Game(Game &&) noexcept = delete;
     Game &operator=(Game &&) noexcept = delete;
 

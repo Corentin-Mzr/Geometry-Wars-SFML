@@ -16,8 +16,8 @@ class EntityManager
 
 public:
     EntityManager() noexcept = default;
-    EntityManager(const EntityManager &) = default;
-    EntityManager &operator=(const EntityManager &) = default;
+    EntityManager(const EntityManager &) noexcept = default;
+    EntityManager &operator=(const EntityManager &) noexcept = default;
     EntityManager(EntityManager &&) noexcept = default;
     EntityManager &operator=(EntityManager &&) noexcept = default;
 
