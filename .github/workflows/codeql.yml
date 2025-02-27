@@ -63,8 +63,10 @@ jobs:
     - name: Install dependencies
       shell: bash
       run: |
-        sudo apt-get update
-        sudo apt-get install -y libx11-dev libxrandr-dev libxcursor-dev libxi-dev libgl1-mesa-dev
+        sudo apt update
+        sudo apt install libsfml-dev
+    # sudo apt-get update
+    # sudo apt-get install -y libx11-dev libxrandr-dev libxcursor-dev libxi-dev libgl1-mesa-dev
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
