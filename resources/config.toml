@@ -1,0 +1,42 @@
+title = "Configuration file for the program"
+
+[window]
+width = 1280
+height = 720
+title = "Geometry Wars SFML"
+framerate = 60 # FPS
+color = [30, 40, 50, 255] # Background color
+
+[player]
+sides = 5  # Number of sides
+size = 20.0  # Distance from center to vertices
+speed = 4.0
+rotation = 2.0 # degrees / frame
+color = [255, 255, 255, 255]
+
+[enemy]
+sides_min = 3
+sides_max = 10
+speed_min = 2.0
+speed_max = 8.0
+rotation = 2.0 # degrees / frame
+size = 20.0
+child_size = 10.0
+child_lifespan = 60 # Number of frames until it disappears
+spawn_rate = 60 # New enemy spanws every X frames
+
+[bullet]
+speed = 12.0
+radius = 5.0
+lifespan = 30 # Number of frames until it disappears
+color = [255, 255, 255, 255]
+
+[score]
+font = "../resources/consolas.ttf"
+size = 24
+color = [255, 255, 255, 255]
+
+[ability]
+duration = 600 # Number of frames the ability works
+cooldown = 1800 # Number of frames between the end of the ability and a new use
+color = [255, 0, 0, 255]
