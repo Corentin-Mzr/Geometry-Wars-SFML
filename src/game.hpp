@@ -46,7 +46,7 @@ private:
     static std::random_device m_rd;
     static std::mt19937 m_gen;
 
-    void init() noexcept;
+    void init();
 
     /* Systems */
     void system_movement() noexcept;

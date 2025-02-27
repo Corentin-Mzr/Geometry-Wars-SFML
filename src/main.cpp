@@ -6,8 +6,15 @@
 
 int main()
 {
-    Game game("../resources/config.toml");
-    game.run();
+    try
+    {
+        Game game("../resources/config.toml");
+        game.run();
+    }
+    catch (const std::exception &e)
+    {
+        std::cerr << e.what() << std::endl;
+    }
 
     return 0;
 }

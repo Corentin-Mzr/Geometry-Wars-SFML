@@ -48,7 +48,7 @@ void Game::run() noexcept
     m_window.close();
 }
 
-void Game::init() noexcept
+void Game::init()
 {
     // Window config
     const sf::Vector2u sizes{m_window_config.width, m_window_config.height};
@@ -60,7 +60,9 @@ void Game::init() noexcept
     m_window.setView(sf::View{{0.0f, 0.0f}, sizes_f});
 
     // Score config
-    assert(m_font.openFromFile(m_score_config.font));
+    if (!m_font.openFromFile(m_score_config.font))
+        throw std::runtime_error("Could not find " + m_score_config.font);
+    
     m_score_text.setFont(m_font);
     m_score_text.setCharacterSize(m_score_config.size);
     m_score_text.setFillColor(array_to_color(m_score_config.color));
