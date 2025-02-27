@@ -1,3 +1,4 @@
+#define TOML_IMPLEMENTATION
 #include "config_parser.hpp"
 
 ConfigParser::ConfigParser(const std::string &config_filepath) : m_filepath(config_filepath)

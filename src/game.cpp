@@ -452,10 +452,10 @@ void Game::spawn_enemy() noexcept
     const sf::Vector2f vel = sf::Vector2f{vx(m_gen), vy(m_gen)}.normalized();
 
     /* Random color */
-    static std::uniform_int_distribution<uint8_t> r(0, 255);
-    static std::uniform_int_distribution<uint8_t> g(0, 255);
-    static std::uniform_int_distribution<uint8_t> b(0, 255);
-    const sf::Color color = {r(m_gen), g(m_gen), b(m_gen)};
+    static std::uniform_int_distribution<int> r(0, 255);
+    static std::uniform_int_distribution<int> g(0, 255);
+    static std::uniform_int_distribution<int> b(0, 255);
+    const sf::Color color = {static_cast<uint8_t>(r(m_gen)), static_cast<uint8_t>(g(m_gen)), static_cast<uint8_t>(b(m_gen))};
 
     /* Random number of sides */
     static std::uniform_int_distribution<unsigned> sides(m_enemy_config.sides_min, m_enemy_config.sides_max);

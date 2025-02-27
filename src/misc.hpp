@@ -7,6 +7,10 @@
 
 #include <SFML/Graphics.hpp>
 
+#ifndef M_PI
+#define M_PI 3.14159265358979323846
+#endif
+
 inline sf::Color array_to_color(const std::array<uint8_t, 4> &array) noexcept
 {
     return sf::Color(array[0], array[1], array[2], array[3]);
