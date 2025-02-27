@@ -31,10 +31,10 @@ cmake --build build
 
 ### Run the program
 
-To run the program, launch it from the build folder
+To run the program, launch it from the build/bin folder
 
 ```bash
-cd build
+cd build/bin
 ./Geometry-Wars-SFML.exe
 ```
 
