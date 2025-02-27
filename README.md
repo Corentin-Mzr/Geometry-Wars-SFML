@@ -26,7 +26,7 @@ Uses an implementation of an Entity-Component-System (ECS) architecture
 ### Clone the repository
 
 ```bash
-git clone https://github.com/Corentin-Mzr/geometry-wars-sfml-cpp
+git clone https://github.com/Corentin-Mzr/Geometry-Wars-SFML
 ```
 
 ### Build the project
