@@ -23,6 +23,27 @@ Uses an implementation of an Entity-Component-System (ECS) architecture
 - C++/C compiler (gcc, g++, cl, clang)
 - CMake 3.28 or newer
 
+For Linux/Ubuntu, you also need to install the following dependencies:  
+
+```bash
+sudo apt-get update
+sudo apt-get install -y libx11-dev \
+                        libxcursor-dev \
+                        libxi-dev \
+                        libxrandr-dev \
+                        libudev-dev \
+                        libgl1-mesa-dev \
+                        libfreetype6-dev \
+                        libjpeg-dev \
+                        libopenal-dev \
+                        libflac-dev \
+                        libvorbis-dev \
+                        libxcb1-dev \
+                        libxcb-image0-dev \
+                        libxcb-randr0-dev \
+                        libxcb-xtest0-dev
+```
+
 ### Clone the repository
 
 ```bash
@@ -34,8 +55,7 @@ git clone https://github.com/Corentin-Mzr/Geometry-Wars-SFML
 From the root folder, execute the following commands
 
 ```bash
-mkdir build
-cmake ..
+cmake -B build
 cmake --build build
 ```
 
