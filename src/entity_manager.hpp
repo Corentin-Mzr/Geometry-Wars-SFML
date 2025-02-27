@@ -23,7 +23,7 @@ public:
 
     [[nodiscard]] std::shared_ptr<Entity> add_entity(const std::string &tag) noexcept;
     [[nodiscard]] EntityVec &get_entities() noexcept;
-    [[nodiscard]] EntityVec &get_entities(const std::string &tag);
+    [[nodiscard]] EntityVec &get_entities(const std::string &tag) noexcept;
     void update() noexcept;
 
 private:

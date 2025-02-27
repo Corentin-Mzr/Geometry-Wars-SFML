@@ -12,7 +12,7 @@
     return m_entities;
 }
 
-[[nodiscard]] EntityVec &EntityManager::get_entities(const std::string &tag)
+[[nodiscard]] EntityVec &EntityManager::get_entities(const std::string &tag) noexcept
 {
     static EntityVec empty;
     if (m_entity_map.find(tag) != m_entity_map.end())
