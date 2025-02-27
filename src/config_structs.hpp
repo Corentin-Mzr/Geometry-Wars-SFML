@@ -15,7 +15,7 @@ struct WindowConfig
     unsigned framerate = 0;
     std::array<uint8_t, 4> color = {0, 0, 0, 255};
 };
-TOML11_DEFINE_CONVERSION_NON_INTRUSIVE(WindowConfig, width, height, title, framerate, color);
+TOML11_DEFINE_CONVERSION_NON_INTRUSIVE(WindowConfig, width, height, title, framerate, color)
 
 struct PlayerConfig
 {
@@ -25,7 +25,7 @@ struct PlayerConfig
     float rotation = 0.0f;
     std::array<uint8_t, 4> color = {0, 0, 0, 255};
 };
-TOML11_DEFINE_CONVERSION_NON_INTRUSIVE(PlayerConfig, sides, size, speed, rotation, color);
+TOML11_DEFINE_CONVERSION_NON_INTRUSIVE(PlayerConfig, sides, size, speed, rotation, color)
 
 struct EnemyConfig
 {
