@@ -30,6 +30,13 @@ target_include_directories(${PROJECT_NAME}
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17)
 target_link_libraries(${PROJECT_NAME} PRIVATE SFML::Graphics)
 
+# Need to use preprocessor conformance mode when compiling with MSVC
+# See https://github.com/ToruNiina/toml11/issues/270
+if (MSVC)
+    target_compile_options(${PROJECT_NAME} PRIVATE /Zc:preprocessor)
+endif()
+
+
 # Copy resources
 add_custom_target(copy_folders ALL
     COMMAND ${CMAKE_COMMAND} -E copy_directory

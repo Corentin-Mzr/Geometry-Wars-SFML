@@ -5,7 +5,7 @@
 
 #include <SFML/Graphics.hpp>
 
-#include "toml.hpp"
+#include <toml.hpp>
 
 struct WindowConfig
 {
